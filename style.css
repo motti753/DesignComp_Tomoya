@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+/* common */
+body {
+  font-size: 1rem;
+  margin: 0;
+}
+
+header .heading,
+header .title,
+header p {
+  color: #fff;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  font: normal normal bold 36px/55px Poppins;
+  margin: 8% auto 0;
+}
+
+p {
+  font: normal normal normal 16px/19px Myriad Pro;
+  line-height: 1.5em;
+}
+
+.hero,
+.work,
+.florist,
+.shop-information {
+  text-align: center;
+  padding: 0 10%;
+}
+
+.under-line {
+  border-bottom: 1px solid #707070;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  width: 5%;
+}
+
+.back-color {
+  background: #ededed;
+  height: 240px;
+  margin: -120px 0 0 0;
+  width: 100%;
+}
+
+/* header */
+header {
+  background-size: 100% 100%;
+  background: url('img/header.png') no-repeat padding-box;
+  height: 60vh;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+
+header .heading {
+  border: 1px dashed #fff;
+  font-size: 1.5em;
+  font-weight: normal;
+  height: 10%;
+  left: 10%;
+  position: absolute;
+  top: 8%;
+  width: 80%;
+}
+
+.title-set {
+  display: flex;
+  flex-direction: column;
+  left: 40%;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+}
+
+.title-set .title {
+  font: normal normal normal 500%/100% Myriad Pro;
+}
+
+.title-set p {
+  font-size: 0.8em;
+}
+
+/* main */
+/* hero */
+.hero img {
+  height: 50%;
+  margin-top: 16px;
+  vertical-align: bottom;
+  width: 100%;
+}
+
+/* work */
+.work-introduction {
+  display: flex;
+  gap: 5%;
+  justify-content: space-between;
+}
+
+.introduction {
+  text-align: left;
+  width: 100%;
+}
+
+.introduction img{
+  width: 100%;
+}
+
+.introduction > h3 {
+  margin-bottom: 0;
+}
+
+.introduction > p {
+  margin: 0;
+}
+
+.gift img {
+  height: 50%;
+  width: 100%;
+}
+
+.decoration,
+.wedding,
+.for-yourself {
+  margin-top: 64px;
+}
+
+.wedding {
+  margin-top: 64px;
+}
+
+.for-yourself {
+  margin-top: 64px;
+}
+
+/* florist */
+.custum {
+  height: 350px;
+  margin: 64px 0 0 0;
+}
+
+.florist {
+  margin-top: -300px;
+}
+
+.florist-list {
+  display: flex;
+  gap: calc((100% - 90%) / 3);
+  justify-content: space-between;
+}
+
+.human {
+  text-align: left;
+  width: 30%;
+}
+
+.human img {
+  width: 100%;
+}
+
+/* shop-information */
+.shop {
+  display: flex;
+  gap: 5%;
+  justify-content: space-between;
+}
+
+.shop img {
+  height: 60%;
+  width: 50%;
+}
+
+.shop-info {
+  border: 1px dashed #000;
+  width: 50%;
+}
+
+.info {
+  display: flex;
+  margin-left: 5%;
+}
+
+.info > h4 {
+  border-right: 1px solid #a0a0a0;
+  font-weight: normal;
+  width: 30%;
+}
+
+.info > p {
+  margin-left: 5%;
+  text-align: left;
+  width: 60%;
+}
+
+/* contact */
+.contact {
+  background-size: 100% 100%;
+  background: url(img/contact_us.png) no-repeat;
+  height: 40vh;
+  margin-top: 64px;
+  position: relative;
+  text-align: center;
+}
+
+.us {
+  left: 30%;
+  position: absolute;
+  top: 20%;
+}
+
+.us > h2 {
+  margin: 0;
+}
+
+.inquiry {
+  align-items: center;
+  background: #fff;
+  border: 1px solid #000;
+  display: flex;
+  gap: 16px;
+  height: 3em;
+  justify-content: center;
+  margin: 0 auto;
+  width: 15em;
+}
+
+.material-symbols-outlined {
+  color: #a0a0a0;
+}
+
+a {
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .work-introduction {
+    flex-direction: column;
+  }
+
+  .florist-list {
+    flex-direction: column;
+  }
+
+  .human {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .shop {
+    flex-direction: column;
+  }
+
+  .shop > img,
+  .shop-info {
+    width: 100%;
+  }
+
+  .us {
+    top: 10%;
+    left: 10%;
+  }
+}
